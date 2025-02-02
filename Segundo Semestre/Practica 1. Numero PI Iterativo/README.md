@@ -1,6 +1,6 @@
 # 🎯 Aproximación del Número Pi usando el Método de Montecarlo
 
-Este proyecto implementa una aproximación del número Pi utilizando el **método de Montecarlo** en Java. El método de Montecarlo es una técnica estadística que utiliza muestreo aleatorio para obtener resultados numéricos de manera aproximada.
+Este proyecto implementa una aproximación del número Pi de forma Iterada utilizando el **método de Montecarlo** en Java. El método de Montecarlo es una técnica estadística que utiliza muestreo aleatorio para obtener resultados numéricos de manera aproximada.
 
 ---
 
