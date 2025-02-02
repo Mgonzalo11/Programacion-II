@@ -30,8 +30,7 @@ Para compilar y ejecutar el programa, puedes utilizar los siguientes comandos en
 ```sh
 javac -d bin mates/Matematicas.java aplicacion/Principal.java  
 java -cp bin aplicacion.Principal  
-
-
+```
 
 
 ## 🛠️ Requisitos
