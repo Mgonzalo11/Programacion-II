@@ -1,6 +1,7 @@
 # 🎯 Aproximación del Número Pi usando el Método de Montecarlo
 
-Este proyecto implementa una aproximación del número Pi de forma Iterada utilizando el **método de Montecarlo** en Java. El método de Montecarlo es una técnica estadística que utiliza muestreo aleatorio para obtener resultados numéricos de manera aproximada.
+Este proyecto implementa una aproximación del número Pi de forma Iterada utilizando el **método de Montecarlo** en Java. 
+El método de Montecarlo es una técnica estadística que utiliza muestreo aleatorio para obtener resultados numéricos de manera aproximada.
 
 ---
 
@@ -9,7 +10,7 @@ Este proyecto implementa una aproximación del número Pi de forma Iterada utili
 Para compilar y ejecutar este proyecto, necesitas:
 
 - **Java Development Kit (JDK) 8 o superior**.
-- **Make** (opcional, pero recomendado para usar el makefile proporcionado).
+- **Make**.
 
 ---
 ## 🧩 Descripción del Código
@@ -21,6 +22,13 @@ El proyecto consta de dos archivos principales:
 
 ---
 
+## 📊 Diagrama UML del Proyecto
+El siguiente diagrama UML representa la estructura del proyecto:
+
+![Diagrama UML](img/Diagrama-UML.png)
+
+---
+
 ## 📄 Licencia
 
 Este proyecto está bajo la licencia **Apache 2.0**. Para más detalles, consulta el archivo [LICENSE](LICENSE).
@@ -29,4 +37,5 @@ Este proyecto está bajo la licencia **Apache 2.0**. Para más detalles, consult
 
 ## 👨‍💻 Autor
 
-- **Miguel** - [https://github.com/Mgonzalo11]
+- **Miguel Gonzalo Vázquez** - [https://github.com/Mgonzalo11]
+- **Jorge Delgado Castellanos** - [https://github.com/jorjonudo]

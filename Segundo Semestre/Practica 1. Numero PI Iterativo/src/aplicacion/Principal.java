@@ -9,7 +9,8 @@ import mates.Matematicas;
 
 public class Principal {
     public static void main(String[] args){
-        System.out.println("El número PI es " + //+ Matematicas.generarNumeroPiIterativo(Integer.parseInt("8"))); // De esta manera se puede pasar el número de iteraciones directamente.
-        Matematicas.generarNumeroPiIterativo(Integer.parseInt(args[0]))); //De esta manera se puede pasar el número de iteraciones por consola
+        System.out.println("El número PI es " +
+                Matematicas.generarNumeroPiIterativo(Integer.parseInt(args[0]))); //De esta manera se puede pasar el número de iteraciones por consola
+                //Matematicas.generarNumeroPiIterativo(Integer.parseInt("1000000"))); De esta manera se puede pasar el número de iteraciones directamente.
     }
 }
