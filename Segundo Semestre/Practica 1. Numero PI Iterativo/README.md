@@ -35,7 +35,7 @@ Este proyecto está bajo la licencia **Apache 2.0**. Para más detalles, consult
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
 - **Miguel Gonzalo Vázquez** - [https://github.com/Mgonzalo11]
 - **Jorge Delgado Castellanos** - [https://github.com/jorjonudo]
