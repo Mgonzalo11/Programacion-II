@@ -55,5 +55,5 @@ Este proyecto está bajo la licencia **Apache 2.0**. Para más detalles, consult
 
 ## 👨‍💻 Autores
 
-- **Miguel** - [https://github.com/Mgonzalo11]
-- Jorge Delgado Castellanos - [https://github.com/jorjonudo]
+- **Miguel Gonzalo Vázquez** - [https://github.com/Mgonzalo11]
+- **Jorge Delgado Castellanos** - [https://github.com/jorjonudo]
