@@ -40,6 +40,13 @@ El proyecto consta de dos archivos principales:
 
 ---
 
+## 📊 Diagrama UML del Proyecto
+El siguiente diagrama UML representa la estructura del proyecto:
+
+![Diagrama UML](img/DiagramaUML.png)
+
+---
+
 ## 📄 Licencia
 
 Este proyecto está bajo la licencia **Apache 2.0**. Para más detalles, consulta el archivo [LICENSE](LICENSE).
