@@ -10,7 +10,7 @@ El método de Montecarlo es una técnica probabilística que emplea números ale
 Antes de ejecutar este proyecto, asegúrate de tener instalado lo siguiente:  
 
 - **Java Development Kit (JDK) 8 o superior**  
-- **Make** (opcional, pero recomendado para simplificar la compilación y ejecución)  
+- **Make** 
 
 ---
 
@@ -22,16 +22,6 @@ El código se organiza en los siguientes archivos:
 - 📂 **`Matematicas.java`** → Implementa el cálculo de Pi mediante una función recursiva que genera puntos y cuenta los que caen dentro del círculo.  
 
 ---
-
-## 🚀 Compilación y Ejecución 
-
-Para compilar y ejecutar el programa, puedes utilizar los siguientes comandos en la terminal:  
-
-```sh
-javac -d bin mates/Matematicas.java aplicacion/Principal.java  
-java -cp bin aplicacion.Principal  
-```
-
 
 ## 🛠️ Requisitos
 
@@ -56,6 +46,7 @@ Este proyecto está bajo la licencia **Apache 2.0**. Para más detalles, consult
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
 - **Miguel** - [https://github.com/Mgonzalo11]
+- Jorge Delgado Castellanos - [https://github.com/jorjonudo]
