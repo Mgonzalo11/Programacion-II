@@ -1,0 +1,27 @@
+public class CifradoCesar {
+    public static String cifrarCadena(String str, int desplazamiento) {
+        if (str.isEmpty()) {
+            return "";
+        }
+
+        char primerCaracter = str.charAt(0);
+        char caracterCifrado = cifrarCaracter(primerCaracter, desplazamiento);
+
+        return caracterCifrado + cifrarCadena(str.substring(1), desplazamiento);
+    }
+
+    private static char cifrarCaracter(char c, int desplazamiento) {
+        if (Character.isLetter(c)) {
+            char base = Character.isUpperCase(c) ? 'A' : 'a';
+            return (char) ((c - base + desplazamiento) % 26 + base);
+        }
+        return c; // No cifra caracteres que no sean letras
+    }
+
+    public static void main(String[] args) {
+        String texto = "Hola Mundo!";
+        int desplazamiento = 3;
+        String textoCifrado = cifrarCadena(texto, desplazamiento);
+        System.out.println("Texto cifrado: " + textoCifrado);
+    }
+}

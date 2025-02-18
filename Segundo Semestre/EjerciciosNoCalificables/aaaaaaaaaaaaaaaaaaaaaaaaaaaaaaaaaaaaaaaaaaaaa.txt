@@ -1,0 +1,15 @@
+public class SumaCodigos {
+    public static int sumaCodigos(String str) {
+        // Caso base: si la cadena está vacía, la suma es 0
+        if (str.isEmpty()) {
+            return 0;
+        }
+        // Obtener el código ASCII del primer carácter y sumarlo recursivamente con el resto de la cadena
+        return str.charAt(0) + sumaCodigos(str.substring(1));
+    }
+
+    public static void main(String[] args) {
+        String texto = "Hola";
+        System.out.println("Suma de códigos ASCII: " + sumaCodigos(texto)); // H=72, o=111, l=108, a=97 → 72+111+108+97 = 388
+    }
+}
