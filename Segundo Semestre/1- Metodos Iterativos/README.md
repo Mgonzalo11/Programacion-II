@@ -1,7 +1,6 @@
-# 🎯 Aproximación del Número Pi usando el Método de Montecarlo
+# 🎯 Ejercicios con Métodos Iterativos
 
-Este proyecto implementa una aproximación del número Pi de forma Iterada utilizando el **método de Montecarlo** en Java. 
-El método de Montecarlo es una técnica estadística que utiliza muestreo aleatorio para obtener resultados numéricos de manera aproximada.
+En estos ejercicios se pone en práctica la teoría sobre métodos iterativos
 
 ---
 
@@ -17,15 +16,8 @@ Para compilar y ejecutar este proyecto, necesitas:
 
 El proyecto consta de dos archivos principales:
 
-- **`Principal.java`**: Contiene el método `main` que inicia la simulación de Montecarlo. Recibe como argumento el número de puntos aleatorios a generar y muestra la aproximación de Pi.
-- **`Matematicas.java`**: Implementa la lógica para generar puntos aleatorios y calcular la aproximación de Pi utilizando el método de Montecarlo.
-
----
-
-## 📊 Diagrama UML del Proyecto
-El siguiente diagrama UML representa la estructura del proyecto:
-
-![Diagrama UML](img/Diagrama-UML.png)
+- **`Principal.java`**: Contiene el método `main` que inicia el programa con los diferentes ejemplos. Recibe diferentes argumentos y muestra por pantalla la solución de cada ejercicios.
+- **`Matematicas.java`**: Implementa la lógica para cada uno de los enunciados propuestos utilizando métodos iterativos para obtener la solución.
 
 ---
 
