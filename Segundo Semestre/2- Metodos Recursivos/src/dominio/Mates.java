@@ -1,4 +1,32 @@
 package dominio;
+/* Ejercicios Teóricos
+EJERCICIO 1 - Explique qué es un metodo recursivo y cómo funciona
+Un metodo recursivo es un metodo que se llama a sí mismo para resolver un problema de forma iterativa.
+Existen dos partes en un metodo recursivo: el caso base y el caso recursivo.
+El caso base es la condición que detiene la recursión, y el caso recursivo es la llamada al metodo dentro de sí mismo.
+Hay dos formas de implementar un metodo recursivo: guardando en memoria y sin guardar en memoria.
+En el caso de guardar en memoria, se almacena el resultado de cada llamada recursiva en una variable, y se retorna al final.
+En el caso de no guardar en memoria, se retorna el resultado de la llamada recursiva directamente.
+
+EJERCICIO 3- ¿En que consiste el problema de las Torres de Hanoi? ¿Cómo se resuelve de forma recursiva?
+El problema de las Torres de Hanoi consiste en mover una torre de discos de un palo a otro, utilizando un palo auxiliar, de forma que nunca se coloque un disco más grande
+sobre uno más pequeño. Se resuelve de forma recursiva moviendo n-1 discos al palo auxiliar, moviendo el disco n al palo destino y moviendo los n-1 discos del palo auxiliar al
+palo destino.
+Para resolver el problema de las Torres de Hanoi de forma recursiva, se puede utilizar la siguiente función:
+public static void torresDeHanoi(int n, char origen, char destino, char auxiliar){
+    if (n == 1){
+        System.out.println("Mover disco 1 de " + origen + " a " + destino);
+    } else {
+        torresDeHanoi(n-1, origen, auxiliar, destino);
+        System.out.println("Mover disco " + n + " de " + origen + " a " + destino);
+        torresDeHanoi(n-1, auxiliar, destino, origen);
+    }
+}
+EJERCICIO 5 - ¿Por qué la ejecución de un metodo recursivo puede levantar una excepción de desbordamiento de pila con la misma entrada que la versión no recursiva no provoca tal 	excepción?
+Porque en la versión recursiva se guardan en memoria las llamadas a la función recursiva, mientras que en la versión no recursiva no se guardan en memoria las llamadas a 	la función recursiva. Lo que provoca que en la versión recursiva se consuma más memoria y se pueda llegar a desbordar la pila.
+*/
+
+// EJERCICIO 2 - Escribe los siguientes metodos de forma recursiva
 
 public class Mates {
     // 1 Calcular la suma de los primeros n numeros naturales de forma recursiva sin guardar en memoria
@@ -69,13 +97,23 @@ public class Mates {
             }
         }
     }
-    // 9 Dada una lista de numeros naturales mayores o iguales que 2, obtiene otra lista con los numeros pares de la lista inicial, en el mismo orden y respetando los numeros repetidos. Por ejemplo obtenerListaPar([1,2,6,11]) = [2,6]
 
-    // 10 Calcula la lista de los primeros numeros pares hasta n asumiendo n mayor o igual a dos. Por ejemplo, listaPar(9) = [8,6,4,2].
-
-    // 11 Producto escalar de dos listas de numeros no vacias y del mismo tamaño.
-    // Por ejemplo, calcularProductoEscalar([1,2,3],[2,4,6]) = 1·2+2·4+3·6 = 2+8+18=28
-
+    // EJERCICIO 4 Escriba un metodo recursivo con la siguiente cabecera:
+    // double integralEXCuadrado(double limInf, double limSup, double h) para que calcule la integral de ex2 mediante el metodo de los rectángulos. Es
+    // decir, sup suma = x=inf ex2h donde inf, el límite inferior, se corresponde con limInf en la cabecera del predicado; sup, el límite superior, se corresponde con limSup; h es el paso; y
+    // suma, el resultado de la integral definida, se corresponde con valor devuelto por el metodo.
+    // Por ejemplo, si se desea calcular 1 0 ex2 dx con h = 0,1, se realizará la
+    // siguiente invocación: Matematicas.integralEXCuadrado(0, 1, 0.1); donde 0 es el límite inferior; 1, el límite superior; y 0,1 el paso, por tanto: Formula:
+    public static double integralEXCuadrado(double limInf, double limSup, double h){
+        return auxiliarIntegralEXCuadrado(limInf,limSup,h,0);
+    }
+    private static double auxiliarIntegralEXCuadrado(double limInf,double limSup,double h,double resul){
+        if(limInf >= limSup){
+            return resul;
+        }
+        resul += Math.exp(Math.pow(limInf,2)) * h;
+        return auxiliarIntegralEXCuadrado(limInf + h,limSup,h,resul);
+    }
     // EJERCICIO 6. Escriba un metodo recursivo que reciba una cadena de caracteres y devuelva la suma de sus códigos. La cabecerá será la siguiente:
     // public static int sumaCodigos(String str)
     public static int sumaCodigos(String str){
